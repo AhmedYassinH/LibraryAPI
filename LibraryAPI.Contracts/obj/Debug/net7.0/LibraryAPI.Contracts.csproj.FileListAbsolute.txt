@@ -1,0 +1,12 @@
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\bin\Debug\net7.0\LibraryAPI.Contracts.deps.json
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\bin\Debug\net7.0\LibraryAPI.Contracts.dll
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\bin\Debug\net7.0\LibraryAPI.Contracts.pdb
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.csproj.AssemblyReference.cache
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.AssemblyInfoInputs.cache
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.AssemblyInfo.cs
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.dll
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\refint\LibraryAPI.Contracts.dll
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\LibraryAPI.Contracts.pdb
+C:\Users\Gateway\desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\obj\Debug\net7.0\ref\LibraryAPI.Contracts.dll
