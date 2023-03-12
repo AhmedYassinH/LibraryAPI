@@ -23,12 +23,6 @@ public class BookController : ControllerBase {
 
     {
 
-        //TODO: clean below
-        // var book = new Book(
-        //     request.Title,
-        //     request.PublisherName
-        // );
-
         InsertBookSQL(request);
 
 // TODO: change the status code to created(string, object)
@@ -115,7 +109,77 @@ public class BookController : ControllerBase {
             Console.WriteLine(e.ToString());
         }
     }
+
+    [HttpPut("{id}")]
+
+    public IActionResult UpdateBook(int id, UpdateBookRequest request)
+    {
+        UpdateBookSQL(id, request);
+
+        // TODO: change to created at response + add response in case no record to update is found
+
+        return Ok();
+    }
+
+    private static void UpdateBookSQL(int id, UpdateBookRequest request)
+    {
+        try
+        {
+            string connectionString = @"Server=DESKTOP-3VQDE5T\LIBRARYAI;Database=LibraryManagement;User Id=sa;Password=1234; TrustServerCertificate = true;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
+                String sql = "UPDATE book SET Title = @title WHERE BookID = @id ;";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.Add("@title", System.Data.SqlDbType.NVarChar).Value = request.Title;
+                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
+
+                connection.Open();
+
+                command.ExecuteNonQuery();
+
+            }
+        }
+        catch (SqlException e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteBook(int id){
+
+
+        try
+        {
+            string connectionString = @"Server=DESKTOP-3VQDE5T\LIBRARYAI;Database=LibraryManagement;User Id=sa;Password=1234; TrustServerCertificate = true;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
+                String sql = "DELETE FROM book WHERE BookID = @id ;";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
+
+                connection.Open();
+
+                command.ExecuteNonQuery();
+
+            }
+        }
+        catch (SqlException e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+
+
+
+
+        return NoContent();
+    }
 }
-
-
-

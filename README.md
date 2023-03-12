@@ -104,7 +104,7 @@ PUT /book/{{id}}
 #### Update a book Response
 
 ```js
-204 No Content
+200 Ok
 ```
 
 
