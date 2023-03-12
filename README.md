@@ -74,11 +74,13 @@ GET /book/{{id}}
 ```
 
 ```json
-{
-        "BookID" : 5 ,
-        "Title": "The C# Player's Guide",
-        "PublisherName": "Starbound Software"
-}
+[
+  {
+    "BookID": 5,
+    "Title": "The Hobbit",
+    "PublisherName": "George Allen & Unwin"
+  }
+]
 ```
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {}
+    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {
+    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
         "projectName": "LibraryAPI.Contracts",
-        "projectPath": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
+        "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
         "packagesPath": "C:\\Users\\Gateway\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gateway\\AppData\\Roaming\\NuGet\\NuGet.Config",

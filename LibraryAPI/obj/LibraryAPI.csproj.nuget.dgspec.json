@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj": {}
+    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj": {
+    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
-        "projectName": "LibraryAPI",
-        "projectPath": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
+        "projectName": "LibraryAPI.Contracts",
+        "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
         "packagesPath": "C:\\Users\\Gateway\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\obj\\",
+        "outputPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gateway\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,14 +39,73 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
+        "projectName": "LibraryAPI",
+        "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
+        "packagesPath": "C:\\Users\\Gateway\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gateway\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[5.1.0, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -1,0 +1,9 @@
+POST http://localhost:5251/book
+Content-Type: application/json
+
+{
+    "Title": "The C# Player''s Guide",
+    "PublisherName": "Bantam"
+}
+
+###

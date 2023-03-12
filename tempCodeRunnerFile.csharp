@@ -1,0 +1,48 @@
+ 
+ 
+ 
+ 
+//  try 
+//             { 
+//                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+//                 builder.DataSource = "DESKTOP-3VQDE5T\LIBRARYAI.database.windows.net"; 
+//                 builder.UserID = "sa";            
+//                 builder.Password = "1234";     
+//                 builder.InitialCatalog = "db_LibraryManagement";
+
+//                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+//                 {
+//                     Console.WriteLine("\nQuery data example:");
+//                     Console.WriteLine("=========================================\n");
+
+//                     String sql = "SELECT TOP (1000) [book_BookID]\
+//                                 ,[book_Title]\
+//                                  ,[book_PublisherName]\
+//                                 FROM [db_LibraryManagement].[dbo].[tbl_book]";
+
+//                     using (SqlCommand command = new SqlCommand(sql, connection))
+//                     {
+//                         connection.Open();
+//                         using (SqlDataReader reader = command.ExecuteReader())
+//                         {
+//                             while (reader.Read())
+//                             {
+//                                 Console.WriteLine("{0} {1}", reader.GetString(0), reader.GetString(1));
+//                             }
+//                         }
+//                     }                    
+//                 }
+//             }
+//             catch (SqlException e)
+//             {
+//                 Console.WriteLine(e.ToString());
+//             }
+
+using Microsoft.Data.SqlClient;
+SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+builder.DataSource = "DESKTOP-3VQDE5T\LIBRARYAI.database.windows.net"; 
+builder.UserID = "sa";            
+builder.Password = "1234";     
+builder.InitialCatalog = "db_LibraryManagement";
+
+Console.WriteLine(Console.WriteLine(builder))c
