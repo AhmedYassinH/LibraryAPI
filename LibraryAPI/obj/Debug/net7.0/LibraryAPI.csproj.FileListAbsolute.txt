@@ -62,3 +62,10 @@ C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bi
 C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\obj\Debug\net7.0\LibraryAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\bin\Debug\net7.0\LibraryAPI.xml
+C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI\obj\Debug\net7.0\LibraryAPI.xml

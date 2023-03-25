@@ -22,7 +22,20 @@ public class BookController : ControllerBase {
     }
 
 
+    /// <summary>
+    /// Creates a New book
+    /// </summary>
 
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     POST /book
+    ///     {
+    ///        "Title": "The C# Player''s Guide",
+    ///        "PublisherName": "Bantam"
+    ///     }
+    ///
+    /// </remarks>
     [HttpPost]
     public IActionResult CreateBook(CreateBookRequest request)
 
@@ -30,10 +43,20 @@ public class BookController : ControllerBase {
 
         _databaseService.InsertBookSQL(request);
 
-// TODO: change the status code to created(string, object)
+        // TODO: change the status code to created(string, object)
         return StatusCode(201);
     }
 
+
+    /// <summary>
+    /// Get a book by ID
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     GET /book/43
+    ///
+    /// </remarks>
 
     [HttpGet("{id:int}")]
 
@@ -51,6 +74,20 @@ public class BookController : ControllerBase {
         return NotFound();
     }
 
+
+    /// <summary>
+    /// Update Book's title by ID
+    /// </summary>
+
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     PUT /book/43
+    ///     {
+    ///        "Title": "The C# Player's Guide",
+    ///     }
+    ///
+    /// </remarks>
   
     [HttpPut("{id}")]
 
@@ -64,6 +101,17 @@ public class BookController : ControllerBase {
     }
 
 
+
+    /// <summary>
+    /// Delete a book by ID
+    /// </summary>
+
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     DELETE /book/43
+    ///
+    /// </remarks>
 
     [HttpDelete("{id}")]
     public IActionResult DeleteBook(int id)

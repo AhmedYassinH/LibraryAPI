@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryAPI</name>
+    </assembly>
+    <members>
+        <member name="M:LibraryAPI.Controllers.BookController.CreateBook(LibraryAPI.Contracts.Book.CreateBookRequest)">
+            <summary>
+            Creates a New book
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /book
+                 {
+                    "Title": "The C# Player''s Guide",
+                    "PublisherName": "Bantam"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.BookController.GetBook(System.Int32)">
+             <summary>
+             Get a book by ID
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /book/43
+            
+             </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.BookController.UpdateBook(System.Int32,LibraryAPI.Contracts.Book.UpdateBookRequest)">
+            <summary>
+            Update Book's title by ID
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /book/43
+                 {
+                    "Title": "The C# Player's Guide",
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.BookController.DeleteBook(System.Int32)">
+            <summary>
+            Delete a book by ID
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /book/43
+            
+             </remarks>
+        </member>
+    </members>
+</doc>
