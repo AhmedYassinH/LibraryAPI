@@ -1,8 +1,11 @@
+using LibraryAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 {
 
 builder.Services.AddControllers();
+builder.Services.AddSingleton<IDatabaseService, DatabaseService>();
 }
 
 

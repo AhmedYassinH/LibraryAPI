@@ -1,6 +1,6 @@
 
 
-GET http://localhost:5251/book/36
+GET http://localhost:5251/book/38
 Content-Type: application/json
 
 

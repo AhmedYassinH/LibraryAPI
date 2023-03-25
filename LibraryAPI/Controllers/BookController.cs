@@ -3,8 +3,8 @@
 
 using LibraryAPI.Contracts.Book;
 using LibraryAPI.Models;
+using LibraryAPI.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 using Newtonsoft.Json;
 
 namespace LibraryAPI.Controllers;
@@ -14,58 +14,36 @@ namespace LibraryAPI.Controllers;
 
 public class BookController : ControllerBase {
 
-    [HttpPost()]
+    private readonly IDatabaseService _databaseService ;
+
+    public BookController(IDatabaseService databaseService)
+    {
+        _databaseService = databaseService;
+    }
 
 
-    // TODO: Fix the database connection to happen only in the first time
 
+    [HttpPost]
     public IActionResult CreateBook(CreateBookRequest request)
 
     {
 
-        InsertBookSQL(request);
+        _databaseService.InsertBookSQL(request);
 
 // TODO: change the status code to created(string, object)
         return StatusCode(201);
     }
 
-    private static void InsertBookSQL(CreateBookRequest request)
-    {
-        try
-        {
-            string connectionString = @"Server=DESKTOP-3VQDE5T\LIBRARYAI;Database=LibraryManagement;User Id=sa;Password=1234; TrustServerCertificate = true;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-
-                String sql = "INSERT INTO book(Title, PublisherName) VALUES (@title,@publisher) ;";
-
-                SqlCommand command = new SqlCommand(sql, connection);
-
-                command.Parameters.Add("@title", System.Data.SqlDbType.NVarChar).Value = request.Title;
-                command.Parameters.Add("@publisher", System.Data.SqlDbType.NVarChar).Value = request.PublisherName;
-
-                connection.Open();
-
-                command.ExecuteReader();
-
-            }
-        }
-        catch (SqlException e)
-        {
-            Console.WriteLine(e.ToString());
-        }
-    }
 
     [HttpGet("{id:int}")]
+
     public IActionResult GetBook(int id)
     {
         var books = new List<Book>();
-        GetBookSQL(id, books);
+        _databaseService.GetBookSQL(id, books);
         if (books.Count != 0)
         {
             var res = JsonConvert.SerializeObject(books);
-            Console.WriteLine(res);
             return Ok(res);
         }
 
@@ -73,113 +51,29 @@ public class BookController : ControllerBase {
         return NotFound();
     }
 
-    private static void GetBookSQL(int id, List<Book> books)
-    {
-        try
-        {
-            string connectionString = @"Server=DESKTOP-3VQDE5T\LIBRARYAI;Database=LibraryManagement;User Id=sa;Password=1234; TrustServerCertificate = true;";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                String sql = "SELECT [BookID], [Title],[PublisherName] FROM book WHERE [BookID] = @id ;";
-
-                SqlCommand command = new SqlCommand(sql, connection);
-
-                command.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
-
-                connection.Open();
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    books.Add(new Book(
-                        reader.GetInt32(0),
-                        reader.GetString(1),
-                        reader.GetString(2)
-                    ));
-
-
-                }
-
-                reader.Close();
-            }
-        }
-        catch (SqlException e)
-        {
-            Console.WriteLine(e.ToString());
-        }
-    }
-
+  
     [HttpPut("{id}")]
 
     public IActionResult UpdateBook(int id, UpdateBookRequest request)
     {
-        UpdateBookSQL(id, request);
+        _databaseService.UpdateBookSQL(id, request);
 
         // TODO: change to created at response + add response in case no record to update is found
 
         return Ok();
     }
 
-    private static void UpdateBookSQL(int id, UpdateBookRequest request)
-    {
-        try
-        {
-            string connectionString = @"Server=DESKTOP-3VQDE5T\LIBRARYAI;Database=LibraryManagement;User Id=sa;Password=1234; TrustServerCertificate = true;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-
-                String sql = "UPDATE book SET Title = @title WHERE BookID = @id ;";
-
-                SqlCommand command = new SqlCommand(sql, connection);
-
-                command.Parameters.Add("@title", System.Data.SqlDbType.NVarChar).Value = request.Title;
-                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
-
-                connection.Open();
-
-                command.ExecuteNonQuery();
-
-            }
-        }
-        catch (SqlException e)
-        {
-            Console.WriteLine(e.ToString());
-        }
-    }
 
 
     [HttpDelete("{id}")]
-    public IActionResult DeleteBook(int id){
-
-
-        try
-        {
-            string connectionString = @"Server=DESKTOP-3VQDE5T\LIBRARYAI;Database=LibraryManagement;User Id=sa;Password=1234; TrustServerCertificate = true;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-
-                String sql = "DELETE FROM book WHERE BookID = @id ;";
-
-                SqlCommand command = new SqlCommand(sql, connection);
-                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
-
-                connection.Open();
-
-                command.ExecuteNonQuery();
-
-            }
-        }
-        catch (SqlException e)
-        {
-            Console.WriteLine(e.ToString());
-        }
-
-
-
+    public IActionResult DeleteBook(int id)
+    {
+         _databaseService.DeleteBookSQL(id);
 
         return NoContent();
     }
+
+ 
 }
+
+
