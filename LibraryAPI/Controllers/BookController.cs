@@ -1,6 +1,7 @@
 
 
 
+using System.Web;
 using LibraryAPI.Contracts.Book;
 using LibraryAPI.Models;
 using LibraryAPI.Services;
@@ -69,8 +70,6 @@ public class BookController : ControllerBase {
             var res = JsonConvert.SerializeObject(books);
             return Ok(res);
         }
-
-        // TODO: add response if proplem occured
         return NotFound();
     }
 
@@ -89,7 +88,7 @@ public class BookController : ControllerBase {
     ///
     /// </remarks>
   
-    [HttpPut("{id}")]
+    [HttpPut("{id:int}")]
 
     public IActionResult UpdateBook(int id, UpdateBookRequest request)
     {
@@ -113,12 +112,68 @@ public class BookController : ControllerBase {
     ///
     /// </remarks>
 
-    [HttpDelete("{id}")]
+    [HttpDelete("{id:int}")]
     public IActionResult DeleteBook(int id)
     {
          _databaseService.DeleteBookSQL(id);
 
         return NoContent();
+    }
+
+
+
+
+    /// <summary>
+    /// Get all books by Author Name and Branch
+    /// </summary>
+
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     GET /book/Stephen King/Central
+    ///
+    /// </remarks>
+    
+    [HttpGet("{author}/{branch}")]
+
+    public IActionResult GetBooksByAuthorAndBranch(string author, string branch)
+    {
+        var books = new List<Book>();
+        _databaseService.GetBooksByAuthorAndBranchSQL(author, branch, books);
+        if (books.Count != 0)
+        {
+            var res = JsonConvert.SerializeObject(books);
+            return Ok(res);
+        }
+        return NotFound();
+    }
+
+
+    /// <summary>
+    /// search through the books with a keyword
+    /// </summary>
+
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     GET /book/Guide
+    ///
+    /// </remarks>
+    
+    [HttpGet("{keyword}")]
+
+    public IActionResult GetBooksByKeyword(string keyword)
+    {
+
+
+        var books = new List<Book>();
+        _databaseService.GetBooksByKeywordSQL(keyword, books);
+        if (books.Count != 0)
+        {
+            var res = JsonConvert.SerializeObject(books);
+            return Ok(res);
+        }
+        return NotFound();
     }
 
  

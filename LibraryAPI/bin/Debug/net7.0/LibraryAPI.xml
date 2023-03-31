@@ -55,5 +55,27 @@
             
              </remarks>
         </member>
+        <member name="M:LibraryAPI.Controllers.BookController.GetBooksByAuthorAndBranch(System.String,System.String)">
+            <summary>
+            Get all books by Author Name and Branch
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /book/Stephen King/Central
+            
+             </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.BookController.GetBooksByKeyword(System.String)">
+            <summary>
+            search through the books with a keyword
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /book/Guide
+            
+             </remarks>
+        </member>
     </members>
 </doc>

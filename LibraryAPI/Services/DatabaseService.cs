@@ -130,5 +130,82 @@ public class DatabaseService : IDatabaseService
         }
     }
 
+    public void GetBooksByAuthorAndBranchSQL(string author, string branch, List<Book> books)
+    {
+        try
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                String sql = "EXEC lib.BookbyAuthorandBranch @BranchName = @branch, @AuthorName =  @author  ;";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.Add("@author", System.Data.SqlDbType.Text).Value = author;
+                command.Parameters.Add("@branch", System.Data.SqlDbType.Text).Value = branch ;
+
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    books.Add(new Book(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2)
+                    ));
+
+
+                }
+
+                reader.Close();
+            }
+        }
+        catch (SqlException e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+    public void GetBooksByKeywordSQL(string keyword, List<Book> books)
+    {
+
+        keyword = '%'+ keyword + '%';
+        try
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                String sql = "SELECT BookID, Title, PublisherName FROM book WHERE Title LIKE @keyword  ;";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.Add("@keyword", System.Data.SqlDbType.Text).Value = keyword;
+
+
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    books.Add(new Book(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2)
+                    ));
+
+
+                }
+
+                reader.Close();
+            }
+        }
+        catch (SqlException e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+    }
+
+
 }
 
