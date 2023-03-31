@@ -28,6 +28,38 @@
     - [Get all books by keyword Request](#get-all-books-by-keyword-request)
     - [Get all books by keyword](#get-all-books-by-keyword-response)
 
+- [Borrowers API](#borrowers-api)
+  - [Create a Borrower](#create-a-borrower)
+    - [Create a Borrower Request](#create-a-borrower-request)
+    - [Create a Borrower Response](#create-a-borrower-response)
+  - [Get a Borrower](#get-a-borrower)
+    - [Get a Borrower Request](#get-a-borrower-request)
+    - [Get a Borrower Response](#get-a-borrower-response)
+  - [Update Borrower's Address](#update-borrowers-address)
+    - [Update Borrower's Address Request](#update-borrowers-address-request)
+    - [Update Borrower's Address Response](#update-borrowers-address-response)
+    
+  - [Delete a Borrower](#delete-a-borrower)
+    - [Delete a Borrower Request](#delete-a-borrower-request)
+    - [Delete a Borrower Response](#delete-a-borrower-response)
+    
+- [Loan API](#loan-api)
+  - [Make a Loan -Borrow a book-](#make-a-loan-borrow-a-book)
+    - [Make a Loan Request](#make-a-loan-request)
+    - [Make a Loan Response](#make-a-loan-respone)
+  - [Delete a Loan -Return a book-](#delete-a-loan-return-a-book)
+    - [Delete a Loan Request](#delete-a-loan-request)
+    - [Delete a Loan Response](#delete-a-loan-respone)
+
+
+
+
+
+
+
+
+
+
 
 ## Books API
 
