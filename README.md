@@ -21,9 +21,9 @@
   - [Delete a book](#delete-a-book)
     - [Delete a book Request](#delete-a-book-request)
     - [Delete a book Response](#delete-a-book-response)
-  - [Get all book by author](#get-all-books-author-and-branch)
-    - [Get all book by author Request](#get-all-books-by-author-and-branch-request)
-    - [Get all book by author](#get-all-books-by-author-and-branch-response)
+  - [Get all books by author](#get-all-books-by-author-and-branch)
+    - [Get all books by author Request](#get-all-books-by-author-and-branch-request)
+    - [Get all books by author](#get-all-books-by-author-and-branch-response)
   - [Get all books by keyword](#get-all-books-by-keyword)
     - [Get all books by keyword Request](#get-all-books-by-keyword-request)
     - [Get all books by keyword](#get-all-books-by-keyword-response)
@@ -126,7 +126,7 @@ DELETE /book/{{id}}
 
 
 
-### Get all books author and branch
+### Get all books by author and branch
 
 #### Get all books by author and branch Request
  
@@ -143,12 +143,23 @@ GET /book/{{author}}/{{branch}}
 ```
 
 ```json
-{       [
+{       
+  [
 
-// TODO: Add content here similar to the database
+    {
+      "BookID":2,
+      "Title":"It",
+      "PublisherName":"Viking"
+    },
+
+    {
+      "BookID":3,
+      "Title":"The Green Mile",
+      "PublisherName":"Signet Books"
+    }
 
 
-        ]
+    ]
 }
 ```
 
@@ -171,12 +182,20 @@ GET /book/{{keyword}}
 ```
 
 ```json
-{       [
+{      
 
-// TODO: Add content here similar to the database
-
-
-        ]
+  [
+    {
+      "BookID": 11,
+      "Title": "The Hitchhikers Guide to the Galaxy",
+      "PublisherName": "Pan Books"
+    },
+    {
+      "BookID": 44,
+      "Title": "The C# Player''s Guide",
+      "PublisherName": "Bantam"
+    }
+  ]
 }
 ```
 

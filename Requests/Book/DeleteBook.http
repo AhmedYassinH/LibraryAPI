@@ -1,7 +1,6 @@
 
 
 DELETE  http://localhost:5251/book/37
-Content-Type: application/json
 
 
 ###
