@@ -343,8 +343,8 @@ POST /loan
 
 ```json
 {
-    "BoookTitle": "It",
-    "BorrowerCardNo": 101,
+    "Title": "It",
+    "CardNo": 101,
     "BranchID": 1,
     "DueDate": NULL
 }
@@ -379,4 +379,47 @@ DELETE /loan/{{title}}/{{card_no}}/{{branch_id}}
 
 ```js
 204 No Content
+```
+
+
+
+### Get all Loans by Borrower card No
+
+
+#### Get all Loans by Borrower card No Request
+ 
+
+```js
+GET /Loans/{{cardNo}}
+```
+
+
+#### Get all Loans by Borrower card No Response
+
+```js
+200 Ok
+```
+
+```json
+{      
+
+  [
+    {
+      "LoanID":1,
+      "BookID": 11,
+      "BranchID":1,
+      "CardNo":100,
+      "DateOut":"2018-01-01T00:00:00",
+      "DueDate":"2018-01-16T00:00:00"
+    },
+    {
+      "LoanID":2,
+      "BookID": 2,
+      "BranchID":1,
+      "CardNo":100,
+      "DateOut":"2018-01-01T00:00:00",
+      "DueDate":"2018-01-16T00:00:00"
+    }
+  ]
+}
 ```
