@@ -1,0 +1,10 @@
+POST http://localhost:5251/borrowers
+Content-Type: application/json
+
+{
+    "BorrowerName": "John David",
+    "BorrowerAddress": "2212 Main Avenue",
+    "BorrowerPhone": "456-689-5522"
+}
+
+###

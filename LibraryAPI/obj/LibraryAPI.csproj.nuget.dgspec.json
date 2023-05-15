@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj": {}
+    "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI/LibraryAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {
+    "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
+        "projectUniqueName": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj",
         "projectName": "LibraryAPI.Contracts",
-        "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
-        "packagesPath": "C:\\Users\\Gateway\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\obj\\",
+        "projectPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj",
+        "packagesPath": "/home/ahmed-yassin/.nuget/packages/",
+        "outputPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gateway\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ahmed-yassin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,36 +53,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ahmed-yassin/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj": {
+    "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI/LibraryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
+        "projectUniqueName": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI/LibraryAPI.csproj",
         "projectName": "LibraryAPI",
-        "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\LibraryAPI.csproj",
-        "packagesPath": "C:\\Users\\Gateway\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI\\obj\\",
+        "projectPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI/LibraryAPI.csproj",
+        "packagesPath": "/home/ahmed-yassin/.nuget/packages/",
+        "outputPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gateway\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ahmed-yassin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Gateway\\Desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj"
+              "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj": {
+                "projectPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj"
               }
             }
           }
@@ -131,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ahmed-yassin/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

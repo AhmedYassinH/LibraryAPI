@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Gateway\\.nuget\\packages\\": {}
+    "/home/ahmed-yassin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
+      "projectUniqueName": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj",
       "projectName": "LibraryAPI.Contracts",
-      "projectPath": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\LibraryAPI.Contracts.csproj",
-      "packagesPath": "C:\\Users\\Gateway\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gateway\\desktop\\Winter Internship\\Week 2\\Final\\LibraryAPI\\LibraryAPI.Contracts\\obj\\",
+      "projectPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/LibraryAPI.Contracts.csproj",
+      "packagesPath": "/home/ahmed-yassin/.nuget/packages/",
+      "outputPath": "/home/ahmed-yassin/Desktop/Final/LibraryAPI/LibraryAPI.Contracts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gateway\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/ahmed-yassin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/ahmed-yassin/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }

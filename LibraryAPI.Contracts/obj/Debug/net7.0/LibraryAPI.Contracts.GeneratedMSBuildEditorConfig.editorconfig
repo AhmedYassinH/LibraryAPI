@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LibraryAPI.Contracts
-build_property.ProjectDir = C:\Users\Gateway\Desktop\Winter Internship\Week 2\Final\LibraryAPI\LibraryAPI.Contracts\
+build_property.ProjectDir = /home/ahmed-yassin/Desktop/backup/Final/LibraryAPI/LibraryAPI.Contracts/

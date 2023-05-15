@@ -77,5 +77,81 @@
             
              </remarks>
         </member>
+        <member name="M:LibraryAPI.Controllers.BorrowersController.CreateBorrower(LibraryAPI.Contracts.Borrower.CreateBorrowerRequest)">
+            <summary>
+            Creates a New Borrower
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /borrowers
+                 {
+                     "BorrowerName": "John David",
+                     "BorrowerAddress": "2212 Main Avenue",
+                     "BorrowerPhone": "456-689-5522"
+                 }
+             </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.BorrowersController.GetBorrower(System.Int32)">
+            <summary>
+            Get a  Borrower
+            </summary>
+            <remarks>
+            GET /borrowers/101
+            </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.BorrowersController.UpdateBorrowerAddress(System.Int32,System.String)">
+            <summary>
+            Update a Borrower's Address through cardNo
+            </summary>
+            <remarks>
+            Sample request:
+            PUT /borrowers/109/2212 Main Avenue
+            </remarks>s
+        </member>
+        <member name="M:LibraryAPI.Controllers.BorrowersController.DeleteBorrower(System.Int32)">
+            <summary>
+            Update a Borrower from database using Card No
+            </summary>
+            <remarks>
+            Sample request:
+            DELETE /borrowers/109
+            </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.LoansController.CreateLoan(LibraryAPI.Contracts.Loan.CreateLoanRequest)">
+            <summary>
+            Create a loan/ Borrow a book
+            </summary>
+            <remarks>
+            Sample request:
+                POST /Loans
+                {
+                   "title": "it",
+                   "cardNo": 100,
+                   "branchID": 1,
+                   "dueDate": NULL
+                }
+            Note:
+                Due date is optional. If not provided, the default value is 15 days afterthe current date.
+            </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.LoansController.DeleteLoan(System.String,System.Int32,System.Int32)">
+            <summary>
+            Delete a loan/ Return a book
+            </summary>
+             <remarks>
+            Sample request:
+                DELETE /Loans/It/100/1
+             </remarks>
+        </member>
+        <member name="M:LibraryAPI.Controllers.LoansController.GetLoansByCardNo(System.Int32)">
+            <summary>
+            Get all loans by cardNo
+            </summary>
+            <remarks>
+            Sample request:
+                GET /Loans/100
+            </remarks>
+        </member>
     </members>
 </doc>
